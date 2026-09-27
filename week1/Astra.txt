@@ -1,0 +1,120 @@
+1. Select * from City;
+
+6 Rotterdam NLD Zuid-Holland 593321 
+3878 Scottsdale USA Arizona 202705 
+3965 Corona USA California 124966 
+3973 Concord USA California 121780 
+3977 Cedar Rapids USA Iowa 120758 
+3982 Coral Springs USA Florida 117549 
+4054 Fairfield USA California 92256 
+4058 Boulder USA Colorado 91238 
+4061 Fall River USA Massachusetts 90555 
+
+
+2. SELECT * FROM CITY WHERE ID = 1661;
+
+1661 Sayama JPN Saitama 162472
+
+
+3. SELECT * FROM CITY WHERE COUNTRYCODE = 'JPN';
+
+1613 Neyagawa JPN Osaka 257315 
+1630 Ageo JPN Saitama 209442 
+1661 Sayama JPN Saitama 162472 
+1681 Omuta JPN Fukuoka 142889 
+1739 Tokuyama JPN Yamaguchi 107078 
+
+
+4. SELECT NAME FROM CITY WHERE COUNTRYCODE = 'JPN';
+
+Neyagawa 
+Ageo 
+Sayama 
+Omuta 
+Tokuyama 
+
+
+5. SELECT CITY, STATE FROM STATION;
+
+Kissee Mills MO 
+Loma Mar CA 
+Sandy Hook CT 
+Tipton IN 
+Arlington CO 
+Turner AR 
+Slidell LA 
+Negreet LA 
+Glencoe KY 
+Chelsea IA 
+
+
+6. SELECT DISTINCT CITY FROM STATION WHERE MOD(ID, 2) = 0;
+
+Aguanga 
+Alba 
+Albany 
+Amo 
+Andersonville 
+Archie 
+Athens 
+Atlantic Mine 
+Bainbridge 
+Baker 
+
+
+7. SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) ASC, CITY ASC FETCH FIRST 1 ROW ONLY;
+
+SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) DESC, CITY ASC FETCH FIRST 1 ROW ONLY;
+
+Amo 3 
+Marine On Saint Croix 21 
+
+
+8. SELECT DISTINCT CITY FROM STATION WHERE LOWER(RIGHT(CITY, 1)) IN ('a', 'e', 'i', 'o', 'u');
+
+
+Acme 
+Aguanga 
+Alba 
+Aliso Viejo 
+Alpine 
+Amazonia 
+Amo 
+Andersonville 
+Archie 
+Arispe
+
+
+9. SELECT NAME FROM STUDENTS WHERE MARKS > 75 ORDER BY RIGHT(NAME, 3), ID ASC;
+
+Stuart 
+Kristeen 
+Christene 
+Amina 
+Aamina 
+Priya 
+Heraldo 
+Scarlet 
+Julia 
+Salma 
+Britney 
+Priyanka 
+Samantha 
+Vivek 
+Belvet 
+Devil 
+Evil 
+
+
+10. SELECT name FROM Employee ORDER BY name ASC;
+
+Alan 
+Amy 
+Andrew 
+Andrew 
+Angela 
+Ann 
+Anna 
+Anthony 
+Antonio 
+Benjamin
