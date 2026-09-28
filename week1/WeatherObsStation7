@@ -1,0 +1,13 @@
+8. SELECT DISTINCT CITY FROM STATION WHERE LOWER(RIGHT(CITY, 1)) IN ('a', 'e', 'i', 'o', 'u');
+
+
+Acme 
+Aguanga 
+Alba 
+Aliso Viejo 
+Alpine 
+Amazonia 
+Amo 
+Andersonville 
+Archie 
+Arispe
